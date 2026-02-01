@@ -22,8 +22,8 @@ return {
 			vim.lsp.config("rust-analyzer", {})
 			vim.lsp.enable("rust-analyzer")
 
-			vim.lsp.config("basedpywrite", {})
-			vim.lsp.enable("basedpywrite")
+			vim.lsp.config("basedpyright", {})
+			vim.lsp.enable("basedpyright")
 
 			vim.lsp.config("lua_ls", {
 				settings = {
