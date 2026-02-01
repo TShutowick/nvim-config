@@ -32,4 +32,9 @@ require("lazy").setup({
 	install = { colorscheme = { "habamax" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true },
+	concurrency = 10, -- Limits simultaneous clones; 10-20 is usually the sweet spot
+	git = {
+		timeout = 120, -- Increase timeout in case of slow handshakes
+		filter = true,
+	},
 })

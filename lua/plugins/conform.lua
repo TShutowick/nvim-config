@@ -5,6 +5,7 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				go = { "goimports", "gofumpt" },
+				python = { "ruff_organize_imports", "ruff_format" },
 			},
 		})
 		vim.api.nvim_create_autocmd("BufWritePre", {
