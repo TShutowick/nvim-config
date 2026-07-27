@@ -37,4 +37,13 @@ return {
 			vim.lsp.enable("lua_ls")
 		end,
 	},
+  {
+    {
+      "ray-x/lsp_signature.nvim",
+      event = "InsertEnter",
+      opts = {
+        -- cfg options
+      },
+    }
+  },
 }
